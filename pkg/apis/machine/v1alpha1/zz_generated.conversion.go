@@ -957,6 +957,7 @@ func autoConvert_v1alpha1_AWSNetworkInterfaceSpec_To_machine_AWSNetworkInterface
 	out.Description = (*string)(unsafe.Pointer(in.Description))
 	out.SecurityGroupIDs = *(*[]string)(unsafe.Pointer(&in.SecurityGroupIDs))
 	out.SubnetID = in.SubnetID
+	out.SrcAndDstChecksEnabled = (*bool)(unsafe.Pointer(in.SrcAndDstChecksEnabled))
 	return nil
 }
 
@@ -971,6 +972,7 @@ func autoConvert_machine_AWSNetworkInterfaceSpec_To_v1alpha1_AWSNetworkInterface
 	out.Description = (*string)(unsafe.Pointer(in.Description))
 	out.SecurityGroupIDs = *(*[]string)(unsafe.Pointer(&in.SecurityGroupIDs))
 	out.SubnetID = in.SubnetID
+	out.SrcAndDstChecksEnabled = (*bool)(unsafe.Pointer(in.SrcAndDstChecksEnabled))
 	return nil
 }
 
